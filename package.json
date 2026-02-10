@@ -12,7 +12,7 @@
     "test:ui": "vitest --ui",
     "e2e": "cypress open",
     "e2e:run": "cypress run",
-    "ci:test": "vitest --no-watch && start-server-and-test dev http://localhost:5173/ e2e:run"
+    "ci:test": "vitest --no-watch && start-server-and-test dev https://fordik-r-v3.vercel.app/ e2e:run"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.11.2",
