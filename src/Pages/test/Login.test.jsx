@@ -21,6 +21,8 @@ describe('Login Component', () => {
       </Provider>,
     );
 
+    //qazqazqaz
+
     await userEvent.type(screen.getByPlaceholderText('EMAIL'), 'test@mail.com');
     await userEvent.type(screen.getByPlaceholderText('KATA SANDI'), '123456');
 
