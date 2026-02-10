@@ -1,6 +1,6 @@
 describe('Login Flow', () => {
   it('should login successfully', () => {
-    cy.visit('https://fordik-r-v3.vercel.app/login');
+    cy.visit('http://localhost:5173/login');
 
     cy.get('input[placeholder="EMAIL"]').type('qazqaz@qazqaz.com');
     cy.get('input[placeholder="KATA SANDI"]').type('qazqazqaz');
@@ -9,6 +9,6 @@ describe('Login Flow', () => {
 
     //dadsa
 
-    cy.url().should('eq', 'https://fordik-r-v3.vercel.app/');
+    cy.url().should('eq', 'http://localhost:5173/');
   });
 });
