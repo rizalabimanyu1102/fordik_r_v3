@@ -33,28 +33,29 @@ const ItemThread = ({
 
     return 'baru saja';
   };
-  // return (
-  //   <div className="itemThread">
-  //     <p className="category">#{category}</p>
-  //     <div className="containerTitleDisc">
-  //       <p className="title">
-  //         <Link key={id} to={`/${id}`}>
-  //           {title}
-  //         </Link>
-  //       </p>
-  //       <p className="desc">{desc}</p>
-  //     </div>
-  //     <div className="containerReaction">
-  //       <div className="reaction">Like {like}</div>
-  //       <div className="reaction">UnLike {unlike}</div>
-  //       <div className="reaction">Comment {comment}</div>
-  //       <div className="reaction2">{timeAgo(time)}</div>
-  //       <div className="reaction2">
-  //         Dibuat oleh <span>{author}</span>
-  //       </div>
-  //     </div>
-  //   </div>
-  // );
+
+  return (
+    <div className="itemThread">
+      <p className="category">#{category}</p>
+      <div className="containerTitleDisc">
+        <p className="title">
+          <Link key={id} to={`/${id}`}>
+            {title}
+          </Link>
+        </p>
+        <p className="desc">{desc}</p>
+      </div>
+      <div className="containerReaction">
+        <div className="reaction">Like {like}</div>
+        <div className="reaction">UnLike {unlike}</div>
+        <div className="reaction">Comment {comment}</div>
+        <div className="reaction2">{timeAgo(time)}</div>
+        <div className="reaction2">
+          Dibuat oleh <span>{author}</span>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 ItemThread.propTypes = {
