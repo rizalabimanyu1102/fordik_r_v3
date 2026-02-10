@@ -9,6 +9,6 @@ describe('Login Flow', () => {
 
     //dadsa
 
-    cy.location('pathname').should('eq', 'https://fordik-r-v3.vercel.app/');
+    cy.url().should('eq', 'https://fordik-r-v3.vercel.app/');
   });
 });
