@@ -7,8 +7,6 @@ describe('Login Flow', () => {
 
     cy.contains('Login').click();
 
-    //dadsa
-
     cy.url().should('eq', 'http://localhost:5173/');
   });
 });
