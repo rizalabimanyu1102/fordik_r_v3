@@ -33,6 +33,7 @@ const ItemThread = ({
 
     return 'baru saja';
   };
+
   return (
     <div className="itemThread">
       <p className="category">#{category}</p>
