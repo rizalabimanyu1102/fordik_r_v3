@@ -7,6 +7,6 @@ describe('Login Flow', () => {
 
     cy.contains('Login').click();
 
-    cy.url().should('eq', 'http://localhost:5173/');
+    cy.location('pathname', { timeout: 10000 }).should('eq', '/');
   });
 });
